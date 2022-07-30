@@ -3,7 +3,7 @@ const JuejinHttp = require('../api')
 const { getBrowser } = require("../../puppeteer/browser")
 const { insertTo } = require("../../utils/db")
 const { getDateStr } = require("../../utils/dayjs")
-
+/*
 const mockArticleData = {
     title: '如果有一天不做前端了，我会做什么？',
     brief_content: '毕业后就投身于前端行业，这期间做过业务，做过基建，大前端技术体系下的各个子方向基本都实践过。回过头来看，与刚进入前端行业时相比，对前端行业的认识更清晰...',
@@ -108,9 +108,10 @@ http://click.aliyun.com/m/1000346073/
 
 本文为阿里云原创内容，未经允许不得转载。`
 }
-
+*/
 
 const articlePublish = async task => {
+/*
     const cookie = await getCookie()
     const API = new JuejinHttp(cookie)
     const times = task.limit - task.done; //需要执行的次数
@@ -209,6 +210,7 @@ const articlePublish = async task => {
     }
     await insertTo(dbData)
     await page.close()
+ */
     console.log(`发布文章 done`)
 }
 
